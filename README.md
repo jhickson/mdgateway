@@ -1,2 +1,1 @@
-# mdgateway
-A market data contribution gateway
+# Market data contribution gateway
