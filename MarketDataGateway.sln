@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9E855E
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketDataGatewayTests", "MarketDataGatewayTests\MarketDataGatewayTests.csproj", "{76BAE61C-7F7F-40A4-9B36-9C303A122174}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,5 +19,9 @@ Global
 		{EC3A4F84-154F-4956-9231-D424B73DF654}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC3A4F84-154F-4956-9231-D424B73DF654}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC3A4F84-154F-4956-9231-D424B73DF654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76BAE61C-7F7F-40A4-9B36-9C303A122174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76BAE61C-7F7F-40A4-9B36-9C303A122174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76BAE61C-7F7F-40A4-9B36-9C303A122174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76BAE61C-7F7F-40A4-9B36-9C303A122174}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
