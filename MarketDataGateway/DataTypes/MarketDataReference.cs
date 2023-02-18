@@ -12,7 +12,7 @@ public readonly record struct MarketDataReference(string RawValue)
     {
         if (string.IsNullOrWhiteSpace(text))
         {
-            throw new Exception("Invalid payment reference.");
+            throw new Exception("Invalid market data reference.");
         }
 
         return text;

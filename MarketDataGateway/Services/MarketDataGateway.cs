@@ -3,7 +3,7 @@ using MarketDataGateway.DataTypes;
 
 namespace MarketDataGateway.Services;
 
-public sealed class MarketDataGateway
+public sealed class MarketDataGateway : IMarketDataGateway
 {
     private readonly IMarketDataValidatorAdapter _validator;
     private readonly IMarketDataRepository _marketDataRepository;
