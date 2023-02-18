@@ -8,7 +8,7 @@ public static class DependencyInjection
     public static IServiceCollection AddMarketDataGatewayServices(this IServiceCollection services)
     {
         return services.AddTransient<IMarketDataGateway, Services.MarketDataGateway>()
-                       .AddTransient<IMarketDataRepository, InMemoryMarketDataRepository>()
+                       .AddSingleton<IMarketDataRepository, InMemoryMarketDataRepository>()
                        .AddTransient<IMarketDataValidatorAdapter, MarketDataValidatorSimulator>();
     }
 }

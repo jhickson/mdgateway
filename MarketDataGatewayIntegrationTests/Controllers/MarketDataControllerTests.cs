@@ -45,6 +45,21 @@ public class MarketDataControllerTests
     }
 
     [Test]
+    public void Given_ServerStarted_When_GetMarketDataRepository_Then_ShouldOnlyBeSingleInstance()
+    {
+        var webApplicationFactory =
+            new WebApplicationFactory<Program>().WithWebHostBuilder(
+                x => x.ConfigureServices(s => s.AddControllers().AddControllersAsServices())
+            );
+
+        // As the implementation is in-memory, it should be a singleton.
+        var marketDataRepository1 = webApplicationFactory.Server.Services.GetRequiredService<IMarketDataRepository>();
+        var marketDataRepository2 = webApplicationFactory.Server.Services.GetRequiredService<IMarketDataRepository>();
+
+        marketDataRepository1.Should().BeSameAs(marketDataRepository2);
+    }
+
+    [Test]
     public async Task
         Given_MarketDataJson_When_PostToMarketDataEndpoint_Then_InstigateNewContributionProcessingAndReturnResult(
             [Values] bool validationSucceeds
