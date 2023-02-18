@@ -67,7 +67,7 @@ public class FxQuoteTests
   ""currencyPair"": ""{pair}"",
   ""bid"": {bid},
   ""ask"": {ask},
-  ""timestamp"": ""{timestamp:yyyy-MM-dd'T'HH:mm:ss.fffffffK}""
+  ""timestamp"": ""{timestamp:yyyy-MM-dd'T'HH:mm:ss.FFFFFFFK}""
 }}";
 
         var subject =
