@@ -9,7 +9,8 @@ namespace MarketDataGateway.Services;
 /// </summary>
 public sealed class InMemoryMarketDataRepository : IMarketDataRepository
 {
-    private readonly ConcurrentDictionary<MarketDataReference, MarketData> _store = new();
+    private readonly ConcurrentDictionary<MarketDataReference, MarketData> _store =
+        new ConcurrentDictionary<MarketDataReference, MarketData>();
 
     public async Task StoreMarketData(MarketDataReference reference, MarketData marketData)
     {

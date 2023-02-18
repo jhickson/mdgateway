@@ -5,7 +5,7 @@ namespace MarketDataGatewayIntegrationTests;
 
 internal sealed class MarketDataGatewayWebApplicationFactory : WebApplicationFactory<Program>
 {
-    private readonly List<(Type ServiceType, object Fake)> _fakeServices = new();
+    private readonly List<(Type ServiceType, object Fake)> _fakeServices = new List<(Type ServiceType, object Fake)>();
 
     public void AddFakedService<TService>(TService service) where TService : class
     {

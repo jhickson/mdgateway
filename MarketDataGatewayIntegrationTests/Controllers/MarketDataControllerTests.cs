@@ -22,11 +22,10 @@ public class MarketDataControllerTests
 
     private IFixture _fixture = null!;
 
-    private static readonly JsonSerializerOptions JsonSerializerOptions =
-        new()
-        {
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-        };
+    private static readonly JsonSerializerOptions JsonSerializerOptions = new JsonSerializerOptions
+                                                                          {
+                                                                              PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+                                                                          };
 
     [Test]
     public void When_StartServer_Then_ShouldBeAbleToResolveController()
