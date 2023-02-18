@@ -5,6 +5,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9E855EC4-A399-44B9-8B11-1EC2314B8296}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketDataGatewayTests", "MarketDataGatewayTests\MarketDataGatewayTests.csproj", "{76BAE61C-7F7F-40A4-9B36-9C303A122174}"
