@@ -25,7 +25,7 @@ public class CurrencyPairTests
 
         var baseCurrencyCode = new CurrencyCode(baseText);
         var quoteCurrencyCode = new CurrencyCode(quoteText);
-        
+
         subject.Base.Should().Be(baseCurrencyCode);
         subject.Quote.Should().Be(quoteCurrencyCode);
     }
@@ -42,7 +42,7 @@ public class CurrencyPairTests
         actual.Should().NotBeNull();
         actual!.Pair.Should().Be(dto.Pair);
     }
-    
+
     [Test]
     public void Given_Pair_When_SerializeToJson_Then_WriteCorrectly()
     {
