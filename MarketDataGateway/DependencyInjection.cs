@@ -11,5 +11,4 @@ public static class DependencyInjection
                        .AddTransient<IMarketDataRepository, InMemoryMarketDataRepository>()
                        .AddTransient<IMarketDataValidatorAdapter, MarketDataValidatorSimulator>();
     }
-    
 }

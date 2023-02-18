@@ -1,4 +1,3 @@
-using System.Net;
 using MarketDataGateway.Abstractions.Services;
 using MarketDataGateway.DataTypes;
 using MarketDataGateway.Dtos;

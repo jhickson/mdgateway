@@ -29,24 +29,23 @@ public class MarketDataValidatorSimulatorTests
                           Ask = ask,
                           Bid = bid
                       };
-        
+
         var subject = _fixture.Create<MarketDataValidatorSimulator>();
 
         var statusCode = await subject.Validate(fxQuote);
 
         statusCode.Should().Be(expectedStatusCode);
     }
-    
+
     [Test]
     public async Task Given_MarketData_When_UnknownToValidator_Then_ReturnAppropriateStatus()
     {
         var marketData = _fixture.Create<MarketData>();
-        
+
         var subject = _fixture.Create<MarketDataValidatorSimulator>();
 
         var statusCode = await subject.Validate(marketData);
 
         statusCode.Should().Be(ValidationStatusCode.UnsupportedMarketDataType);
     }
-    
 }

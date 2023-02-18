@@ -46,7 +46,10 @@ public class MarketDataControllerTests
     }
 
     [Test]
-    public async Task Given_MarketDataJson_When_PostToMarketDataEndpoint_Then_InstigateNewContributionProcessingAndReturnResult([Values] bool validationSucceeds)
+    public async Task
+        Given_MarketDataJson_When_PostToMarketDataEndpoint_Then_InstigateNewContributionProcessingAndReturnResult(
+            [Values] bool validationSucceeds
+        )
     {
         var webApplicationFactory = new MarketDataGatewayWebApplicationFactory();
 
@@ -125,7 +128,7 @@ public class MarketDataControllerTests
     private sealed record NewContributionResponseDto
     {
         public required string StatusCode { get; init; }
-        
+
         public string? Reference { get; init; }
     }
 }

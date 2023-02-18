@@ -62,7 +62,7 @@ public class FxQuoteTests
         var pair = _fixture.Create<CurrencyPair>();
         var bid = _fixture.Create<decimal>();
         var ask = _fixture.Create<decimal>();
-        
+
         var expectedJson = $@"{{
   ""marketDataType"": ""FxQuote"",
   ""currencyPair"": ""{pair}"",

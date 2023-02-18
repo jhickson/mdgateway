@@ -9,13 +9,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.2" />
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.2"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1"/>
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\MarketDataGateway\MarketDataGateway.csproj" />
-        <ProjectReference Include="..\MarketDataGatewayTests\MarketDataGatewayTests.csproj" />
+        <ProjectReference Include="..\MarketDataGateway\MarketDataGateway.csproj"/>
+        <ProjectReference Include="..\MarketDataGatewayTests\MarketDataGatewayTests.csproj"/>
     </ItemGroup>
 
 </Project>

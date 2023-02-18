@@ -5,13 +5,12 @@ using MarketDataGateway.DataTypes;
 namespace MarketDataGateway.Services;
 
 /// <summary>
-/// Very simplistic market data store.
+///     Very simplistic market data store.
 /// </summary>
 public sealed class InMemoryMarketDataRepository : IMarketDataRepository
 {
-    private readonly ConcurrentDictionary<MarketDataReference, MarketData> _store =
-        new ConcurrentDictionary<MarketDataReference, MarketData>();
-    
+    private readonly ConcurrentDictionary<MarketDataReference, MarketData> _store = new();
+
     public async Task StoreMarketData(MarketDataReference reference, MarketData marketData)
     {
         _store.TryAdd(reference, marketData);

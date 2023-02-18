@@ -4,7 +4,7 @@ using MarketDataGateway.DataTypes;
 namespace MarketDataGateway.Services;
 
 /// <summary>
-/// A very basic simulation of a market data validator.
+///     A very basic simulation of a market data validator.
 /// </summary>
 public sealed class MarketDataValidatorSimulator : IMarketDataValidatorAdapter
 {

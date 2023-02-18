@@ -23,7 +23,7 @@ public class MarketDataGatewayTests
         var fxQuote = _fixture.Create<FxQuote>();
 
         A.CallTo(() => validatorAdapter.Validate(fxQuote)).Returns(ValidationStatusCode.Ok);
-        
+
         var subject = _fixture.Create<MarketDataGateway.Services.MarketDataGateway>();
 
         var (reference, statusCode) = await subject.ContributeMarketData(fxQuote);
@@ -47,9 +47,9 @@ public class MarketDataGatewayTests
         var marketDataRepository = _fixture.Freeze<IMarketDataRepository>();
         var fxQuote = _fixture.Create<FxQuote>();
         var validationStatusCode = _fixture.CreateMany<ValidationStatusCode>().First(c => c != ValidationStatusCode.Ok);
-        
+
         A.CallTo(() => validatorAdapter.Validate(fxQuote)).Returns(validationStatusCode);
-        
+
         var subject = _fixture.Create<MarketDataGateway.Services.MarketDataGateway>();
 
         var (reference, statusCode) = await subject.ContributeMarketData(fxQuote);

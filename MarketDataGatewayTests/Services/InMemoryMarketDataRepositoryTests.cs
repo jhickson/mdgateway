@@ -29,7 +29,7 @@ public class InMemoryMarketDataRepositoryTests
     {
         var expectedData = _fixture.Create<MarketData>();
         var marketDataReference = _fixture.Create<MarketDataReference>();
-        
+
         var subject = _fixture.Create<InMemoryMarketDataRepository>();
 
         await subject.StoreMarketData(marketDataReference, expectedData);

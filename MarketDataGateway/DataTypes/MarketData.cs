@@ -7,5 +7,4 @@ namespace MarketDataGateway.DataTypes;
 public record MarketData
 {
     public required DateTimeOffset Timestamp { get; init; }
-
 }

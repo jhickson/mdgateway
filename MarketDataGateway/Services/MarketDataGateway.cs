@@ -5,8 +5,8 @@ namespace MarketDataGateway.Services;
 
 public sealed class MarketDataGateway : IMarketDataGateway
 {
-    private readonly IMarketDataValidatorAdapter _validator;
     private readonly IMarketDataRepository _marketDataRepository;
+    private readonly IMarketDataValidatorAdapter _validator;
 
     public MarketDataGateway(IMarketDataValidatorAdapter validator, IMarketDataRepository marketDataRepository)
     {
